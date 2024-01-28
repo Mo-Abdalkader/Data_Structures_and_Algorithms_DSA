@@ -1,10 +1,13 @@
 # Data Structures
 
-**Definition:**
-A data structure is a way of organizing and storing data in a computer's memory so that it can be used efficiently.
 
-**Purpose:**
-Data structures are used to manage and organize data in a way that supports various operations, such as insertion, deletion, and retrieval.
+>[!important]
+>### Definition
+>A data structure is a way of organizing and storing data in a computer's memory so that it can be used efficiently.
+>
+>### Purpose
+>Data structures are used to manage and organize data in a way that supports various operations, such as insertion, deletion, and retrieval.
+
 
 ## Types of Data Structures:
 
