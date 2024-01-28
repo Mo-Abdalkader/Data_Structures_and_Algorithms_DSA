@@ -5,7 +5,7 @@ public class Array {
 
     private int length;
     private int[] array;
-    private static final int DEFAULT_SIZE = 2;
+    private static final int DEFAULT_SIZE = 10;
 
     public Array() {
         this.length = 0;
@@ -70,15 +70,6 @@ public class Array {
         return array[index];
     }
 
-    private int search(int value) {
-        for (int i = 0; i < length; i++) {
-            if (array[i] == value) {
-                return i;
-            }
-        }
-        return -1; // Element not found
-    }
-
     private void clear() {
         length = 0;
         array = new int[DEFAULT_SIZE];
@@ -86,6 +77,15 @@ public class Array {
 
     private boolean isEmpty() {
         return length == 0;
+    }
+
+    private int search(int value) {
+        for (int i = 0; i < length; i++) {
+            if (array[i] == value) {
+                return i;
+            }
+        }
+        return -1; // Element not found
     }
 
     private void sort() {
@@ -164,10 +164,9 @@ public class Array {
         dynamicArray.delete(1);
         dynamicArray.print(); // [0, 2, 3, 2]
 
-        // Additional Functions
-        System.out.println("Element at index 1: " + dynamicArray.get(1));  // Element at index 1: 2
-        System.out.println("Index of value 2: " + dynamicArray.search(2)); // Index of value 2: 1
-        System.out.println("Is the array empty? " + dynamicArray.isEmpty());     // Is the array empty? false
+        System.out.println("Is the array empty? " + dynamicArray.isEmpty()); // Is the array empty? false
+        System.out.println("Index of value 2: "   + dynamicArray.search(2)); // Index of value 2: 1
+        System.out.println("Element at index 1: " + dynamicArray.get(1)); //    Element at index 1: 2
 
         dynamicArray.sort();
         dynamicArray.print(); // [0, 2, 2, 3]
