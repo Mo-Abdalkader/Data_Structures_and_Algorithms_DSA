@@ -54,7 +54,7 @@ public class ArrayBasedStack<T> {
 
     public T peek() {
         if (isEmpty()) {
-            throw new IllegalStateException("Stack is empty. Cannot peek.");
+            throw new IllegalStateException("Stack is empty. Can't peek.");
         }
         return (T) items[top];
     }
