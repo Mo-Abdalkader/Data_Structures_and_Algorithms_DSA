@@ -51,6 +51,10 @@ public class ArrayBasedStack<T> {
         items[++top] = item;
     }
 
+    public T peek() {
+        return (T) items[top];
+    }
+
     public void display() {
         for (int i = 0; i <= top; i++) {
             System.out.println(items[i]);
@@ -59,13 +63,12 @@ public class ArrayBasedStack<T> {
 
     public static void main(String[] args) {
         ArrayBasedStack<Integer> stack = new ArrayBasedStack<>();
-        stack.push(1); // Stack = [1]
-        stack.push(2); // Stack = [1, 2]
-        stack.push(3); // Stack = [1, 2, 3]
-        System.out.println(stack.pop()); // Output = 3, Stack = [1, 2]
-        System.out.println("");
-        stack.push(4); // Stack = [1, 2, 4]
+        stack.push(1);                 // Stack = [1]
+        stack.push(2);                 // Stack = [1, 2]
+        stack.push(3);                 // Stack = [1, 2, 3]
+        System.out.println(stack.pop());  // Stack = [1, 2], Output = 3 
+        stack.push(4);                 // Stack = [1, 2, 4]
         System.out.println(stack.size()); // 3
-        stack.display();
+        System.out.println(stack.peek()); // 4
     }
 }
