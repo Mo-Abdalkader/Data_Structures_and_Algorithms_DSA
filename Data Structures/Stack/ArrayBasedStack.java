@@ -29,13 +29,14 @@ public class ArrayBasedStack<T> {
     }
 
     public T pop() {
-        if (!isEmpty()) { // To avoid errors, if the stack is already empty
-            T itemToPop = (T) items[top]; // Get the top element to be returned
-            items[top] = null; // Remove this element
-            top--;
-            return itemToPop; // Return the element I saved before
+        if (isEmpty()) {
+            throw new IllegalStateException("Stack is empty. Can't pop.");
         }
-        return null;
+
+        T itemToPop = (T) items[top]; // Get the top element to be returned
+        items[top] = null;            // Remove this element
+        top--;
+        return itemToPop;             // Return the element I saved before
     }
 
     public void enlarge() {
@@ -52,6 +53,9 @@ public class ArrayBasedStack<T> {
     }
 
     public T peek() {
+        if (isEmpty()) {
+            throw new IllegalStateException("Stack is empty. Cannot peek.");
+        }
         return (T) items[top];
     }
 
