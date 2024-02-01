@@ -66,9 +66,9 @@ public class ArrayBasedStack<T> {
         stack.push(1);                    // Stack = [1]
         stack.push(2);                    // Stack = [1, 2]
         stack.push(3);                    // Stack = [1, 2, 3]
-        System.out.println(stack.pop());  // Stack = [1, 2], Output = 3 
+        System.out.println(stack.pop());  // Stack = [1, 2]      Output = 3 
         stack.push(4);                    // Stack = [1, 2, 4]
-        System.out.println(stack.size()); // 3
-        System.out.println(stack.peek()); // 4
+        System.out.println(stack.size()); // Stack = [1, 2, 4]   Output = 3
+        System.out.println(stack.peek()); // Stack = [1, 2, 4]   Output = 4
     }
 }
