@@ -117,33 +117,33 @@ public class SinglyLinkedList<T> {
     public static void main(String[] args) {
         SinglyLinkedList<Integer> linkedList = new SinglyLinkedList<>();
 
-        System.out.println(linkedList.isEmpty());
+        System.out.println(linkedList.isEmpty());              // true
 
         linkedList.add(1);
-        System.out.println(linkedList.isEmpty());
+        System.out.println(linkedList.isEmpty());             // false
 
-        System.out.println("SIZE = " + linkedList.getSize());
+        System.out.println("SIZE = " + linkedList.getSize()); // SIZE = 1
 
         linkedList.add(2);
-        linkedList.display();
+        linkedList.display();                                 // 1 -> 2
 
         linkedList.add(3);
         linkedList.add(4);
-        linkedList.display();
+        linkedList.display();                                 // 1 -> 2 -> 3 -> 4
 
         linkedList.add(5);
         linkedList.add(4);
-        linkedList.display();
+        linkedList.display();                                 // 1 -> 2 -> 3 -> 4 -> 5 -> 4
 
         linkedList.add(3);
         linkedList.add(2);
-        linkedList.display();
+        linkedList.display();                                 // 1 -> 2 -> 3 -> 4 -> 5 -> 4 -> 3 -> 2
 
         linkedList.deleteAll(4);
-        linkedList.display();
+        linkedList.display();                                 // 1 -> 2 -> 3 -> 5 -> 3 -> 2
 
         linkedList.clear();
         linkedList.add(2);
-        linkedList.display();
+        linkedList.display();                                 // 2
     }
 }
