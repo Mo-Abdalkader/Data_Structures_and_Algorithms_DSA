@@ -87,47 +87,43 @@ public class SinglyLinkedList<T> {
         nodesCounter = 0;
     }
 
+    public boolean isEmpty() {
+        return parent == null;
+    }
+
     // Method to get the size of the linked list
     public int getSize() {
         return nodesCounter;
     }
 
-    public void displayPrimitive() {
-        System.out.println("Size: " + getSize());
-        int counter = 1;
-        Node<T> temp = parent;
-        while (temp != null) {
-            System.out.println("Node " + counter++ + " : " + temp.data);
-            temp = temp.next;
-        }
-    }
-
-    public void displayObject() {
-        System.out.println("Size: " + getSize());
-        int counter = 1;
-
-        Node<T> temp = parent;
-        while (temp != null) {
-            System.out.println("Node " + counter++ + " : " + temp.data.toString());
-
-            temp = temp.next;
-        }
-    }
-
     // Method to display the linked list
     public void display() {
-        if (parent != null && parent.data != null && parent.data.getClass().isPrimitive()) {
-            displayPrimitive();
-        } else {
-            displayObject();
+        System.out.println("Size: " + getSize());
+
+        Node<T> temp = parent;
+
+        while (temp != null) {
+            System.out.print(temp.data.toString());
+            temp = temp.next;
+
+            if (temp != null) {
+                System.out.print(" -> ");
+            }
         }
-        System.out.println("");
+
+        System.out.println("\n");
     }
 
     public static void main(String[] args) {
         SinglyLinkedList<Integer> linkedList = new SinglyLinkedList<>();
+
+        System.out.println(linkedList.isEmpty());
+
         linkedList.add(1);
+        System.out.println(linkedList.isEmpty());
+
         System.out.println("SIZE = " + linkedList.getSize());
+
         linkedList.add(2);
         linkedList.display();
 
