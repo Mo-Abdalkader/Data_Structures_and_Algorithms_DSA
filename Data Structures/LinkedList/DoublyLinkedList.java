@@ -149,8 +149,12 @@ public class DoublyLinkedList<T> {
     public void display() {
         System.out.println("Size: " + getSize());
 
-        Node<T> temp = head;
+        if (head == null) {
+            System.out.println("Doubly Linked List is empty.");
+            return;
+        }
 
+        Node<T> temp = head;
         while (temp != null) {
             System.out.print(temp.data.toString());
             temp = temp.next;
@@ -159,7 +163,6 @@ public class DoublyLinkedList<T> {
                 System.out.print(" <-> ");
             }
         }
-
         System.out.println("\n");
     }
 
@@ -214,28 +217,31 @@ public class DoublyLinkedList<T> {
     public static void main(String[] args) {
         DoublyLinkedList<Integer> linkedList = new DoublyLinkedList<>();
 
-        System.out.println(linkedList.isEmpty());// true
+        System.out.println(linkedList.isEmpty());                         // true
 
         linkedList.add(1);
-        System.out.println(linkedList.isEmpty());// false
+        System.out.println(linkedList.isEmpty());                         // false
 
-        System.out.println("SIZE = " + linkedList.getSize()); // SIZE = 1
+        System.out.println("SIZE = " + linkedList.getSize());             // SIZE = 1
 
         linkedList.insertAtBeginning(0);
-        linkedList.display(); // 0 <-> 1
+        linkedList.display();                                             // 0 <-> 1
 
         linkedList.insertAtPosition(2, 2);
-        linkedList.display(); // 0 <-> 1 <-> 2
+        linkedList.display();                                             // 0 <-> 1 <-> 2
 
         linkedList.add(3);
         linkedList.add(4);
-        linkedList.display(); // 0 <-> 1 <-> 2 <-> 3 <-> 4
+        linkedList.display();                                             // 0 <-> 1 <-> 2 <-> 3 <-> 4
 
-        System.out.println("First Element: " + linkedList.getFirst()); // First Element: 0
-        System.out.println("Last Element: " + linkedList.getLast()); // Last Element: 4
+        System.out.println("First Element: " + linkedList.getFirst());    // First Element: 0
+        System.out.println("Last Element: " + linkedList.getLast());      // Last Element: 4
         System.out.println("Middle Element: " + linkedList.findMiddle()); // Middle Element: 2
 
         linkedList.reverse();
-        linkedList.display(); // 4 <-> 3 <-> 2 <-> 1 <-> 0
+        linkedList.display();                                            // 4 <-> 3 <-> 2 <-> 1 <-> 0
+
+        linkedList.clear();                                              
+        linkedList.display();                                            // Doubly Linked List is empty.
     }
 }
