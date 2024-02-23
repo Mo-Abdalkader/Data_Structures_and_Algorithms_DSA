@@ -130,24 +130,24 @@ public class CircularLinkedList<T> {
     public static void main(String[] args) {
         CircularLinkedList<Integer> circularList = new CircularLinkedList<>();
 
-        System.out.println(circularList.isEmpty());// true
+        System.out.println(circularList.isEmpty());             // true
 
         circularList.add(1);
-        System.out.println(circularList.isEmpty());// false
+        System.out.println(circularList.isEmpty());             // false
 
         System.out.println("SIZE = " + circularList.getSize()); // SIZE = 1
 
         circularList.insertAtBeginning(0);
-        circularList.display(); // 0 -> 1 -> 0 (circular)
+        circularList.display();                                 // 0 -> 1 -> 0 (circular)
 
         circularList.add(2);
         circularList.add(3);
-        circularList.display(); // 0 -> 1 -> 2 -> 3 -> 0 (circular)
+        circularList.display();                                 // 0 -> 1 -> 2 -> 3 -> 0 (circular)
 
         circularList.delete(2);
-        circularList.display(); // 0 -> 1 -> 3 -> 0 (circular)
+        circularList.display();                                 // 0 -> 1 -> 3 -> 0 (circular)
 
         circularList.clear();
-        circularList.display(); // Circular Linked List is empty.
+        circularList.display();                                 // Circular Linked List is empty.
     }
 }
