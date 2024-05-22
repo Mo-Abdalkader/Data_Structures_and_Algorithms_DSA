@@ -72,6 +72,10 @@ public class LinearSearch {
     }
 }
 ```
+#### Output:
+```markdown
+Element found at index: 2
+```
 
 ### Example 2: Linear Search in a List of Strings
 ```java
@@ -89,7 +93,7 @@ public class LinearSearchStrings {
 
     public static void main(String[] args) {
         List<String> fruits = List.of("Apple", "Banana", "Cherry", "Date", "Fig");
-        String target = "Cherry";
+        String target = "Date";
         int result = linearSearch(fruits, target);
         
         if (result != -1) {
@@ -100,6 +104,11 @@ public class LinearSearchStrings {
     }
 }
 ```
+#### Output:
+```markdown
+Element found at index: 3
+```
+
 ### Example 3: Linear Search in a Linked List
 ```java
 import java.util.LinkedList;
@@ -124,7 +133,7 @@ public class LinearSearchLinkedList {
         numbers.add(400);
         numbers.add(500);
 
-        int target = 300;
+        int target = 200;
         int result = linearSearch(numbers, target);
         
         if (result != -1) {
@@ -134,6 +143,10 @@ public class LinearSearchLinkedList {
         }
     }
 }
+```
+#### Output:
+```markdown
+Element found at index: 1
 ```
 
 ## Summary
