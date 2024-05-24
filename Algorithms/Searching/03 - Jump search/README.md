@@ -18,8 +18,8 @@ Jump Search is an algorithm for finding an element in a sorted array. It works b
 1. **Definition**: Jump Search divides the array into blocks of fixed size and jumps ahead by these block sizes until the block containing the target element is found.
 2. **Time Complexity**: 
    - **Best Case**: \(O(1)\) - when the target is found in the first block.
-   - **Average Case**: \(O(\sqrt{n})\) - due to the block size being the square root of the array length.
-   - **Worst Case**: \(O(\sqrt{n})\) - when the target is at the end of the array.
+   - **Average Case**: \(O(sqrt{n})\) - due to the block size being the square root of the array length.
+   - **Worst Case**: \(O(sqrt{n})\) - when the target is at the end of the array.
 3. **Space Complexity**: 
    - \(O(1)\) - uses a constant amount of additional space.
 4. **Applicability**: Requires the collection to be sorted. Commonly used for searching in arrays and lists.
