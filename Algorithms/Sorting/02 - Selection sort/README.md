@@ -66,7 +66,7 @@ public class SelectionSort {
 
     public static ArrayList<Integer> selectionSort(ArrayList<Integer> arr) {
         ArrayList<Integer> sortedArr = new ArrayList<>();
-        ArrayList<Integer> copyArr = new ArrayList<>(arr);  // Create local copy of the array to avoid 'popping' elements from the original array while sorting
+        ArrayList<Integer> copyArr = new ArrayList<>(arr);  // Create local copy of the array to avoid 'removing' elements from the original array while sorting
         while (!copyArr.isEmpty()) {
             int smallestIndex = findSmallest(copyArr);
             sortedArr.add(copyArr.remove(smallestIndex));
