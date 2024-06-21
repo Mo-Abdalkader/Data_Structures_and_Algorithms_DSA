@@ -90,6 +90,12 @@ public class SelectionSort {
     }
 }
 ```
+### Output 
+```markdown
+Array --------> [1, 5, 2, 6, 4, 3]
+Sorted Array -> [1, 2, 3, 4, 5, 6]
+```
+
 ## Time Complexity
 
 - **Best Case**: \(O(n^2)\)
