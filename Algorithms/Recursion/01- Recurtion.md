@@ -1,6 +1,4 @@
-## Recursion and Tail Recursion
-
-### Recursion
+## Recursion
 
 **Recursion** is a programming technique where a function calls itself directly or indirectly to solve a problem. It involves breaking down a problem into smaller, simpler subproblems, and solving each of these subproblems recursively until they reach a base case (a condition where the recursion stops).
 
