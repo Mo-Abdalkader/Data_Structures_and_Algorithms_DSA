@@ -8,7 +8,7 @@
 
 **Examples:** Arrays, linked lists, stacks, queues, trees, graphs, hash tables, etc.
 
-**Focus:**Concerned with the implementation and organization of data to optimize storage and access.
+**Focus:** Concerned with the implementation and organization of data to optimize storage and access.
 
 ---
 
