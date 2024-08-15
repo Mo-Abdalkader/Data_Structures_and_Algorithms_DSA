@@ -7,10 +7,10 @@ Whether you're a student, professional, or someone with a keen interest in algor
 ### Table of Contents
 
 1. [Chapter 1: Introduction to Algorithms](https://github.com/Mo-Abdalkader/Data_Structures_and_Algorithms_DSA/tree/main/Algorithms/Searching/02%20-%20Binary%20search)
-2. [Chapter 2: Selection Sort]([https://github.com/Mo-Abdalkader/your-repo-link/chapter-2](https://github.com/Mo-Abdalkader/Data_Structures_and_Algorithms_DSA/tree/main/Algorithms/Sorting/02%20-%20Selection%20sort))
-3. [Chapter 3: Recursion]([https://github.com/Mo-Abdalkader/your-repo-link/chapter-3](https://github.com/Mo-Abdalkader/Data_Structures_and_Algorithms_DSA/tree/main/Algorithms/Recursion))
-4. [Chapter 4: Quicksort]([https://github.com/Mo-Abdalkader/your-repo-link/chapter-4](https://github.com/Mo-Abdalkader/Data_Structures_and_Algorithms_DSA/tree/main/Algorithms/Sorting/05%20-%20Quick%20sort))
-5. [Chapter 5: Hash Tables]([https://github.com/Mo-Abdalkader/your-repo-link/chapter-5](https://github.com/Mo-Abdalkader/Data_Structures_and_Algorithms_DSA/tree/main/Data%20Structures/Hash%20Table))
+2. [Chapter 2: Selection Sort](https://github.com/Mo-Abdalkader/Data_Structures_and_Algorithms_DSA/tree/main/Algorithms/Sorting/02%20-%20Selection%20sort)
+3. [Chapter 3: Recursion](https://github.com/Mo-Abdalkader/Data_Structures_and_Algorithms_DSA/tree/main/Algorithms/Recursion)
+4. [Chapter 4: Quicksort](https://github.com/Mo-Abdalkader/Data_Structures_and_Algorithms_DSA/tree/main/Algorithms/Sorting/05%20-%20Quick%20sort)
+5. [Chapter 5: Hash Tables](https://github.com/Mo-Abdalkader/Data_Structures_and_Algorithms_DSA/tree/main/Data%20Structures/Hash%20Table)
 6. [Chapter 6: Breadth-First Search]()
 7. [Chapter 7: Dijkstra's Algorithm]()
 8. [Chapter 8: Greedy Algorithms]()
